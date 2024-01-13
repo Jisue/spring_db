@@ -8,6 +8,8 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+ext["hibernate.version"] = "5.6.5.Final"
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -38,6 +40,7 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
 
 	//JPA, 스프링 데이터 JPA 추가
+	//JPA , 하이버네이트, 스프링 데이터 JPA, 스프링 JDBC 관련 기능도 모두 포함
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
 
